@@ -59,8 +59,8 @@ https://github.com/Sierkinhane/crnn_chinese_characters_rec
     将 pytorch_binding 中生成的warpctc_pytorch文件夹copy到crnn下
     
  ### 制作训练集
-    python3 to_lmdb/tolmdb.py(按比例将训练集划分成train和val，生成方式一样，就是放到不同的目录)
-    根据自己的lable文件，生成 alphabets.py(就是将所有lable去重写进此文件)
+    1、python3 to_lmdb/tolmdb.py(按比例将训练集划分成train和val，生成方式一样，就是放到不同的目录)
+    2、根据自己的lable文件，生成 alphabets.py(就是将所有lable去重写进此文件)
     
  ### 训练(第一次训练，--model_path '')
     python3 crnn_main.py --trainroot './data/' --valroot './data/val' --cuda --model_path './expr/crnn_Rec_done_35_2019-03-27.pth'
