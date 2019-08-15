@@ -55,7 +55,7 @@ https://github.com/Sierkinhane/crnn_chinese_characters_rec
     pip3 install torchvision
     git clone https://github.com/SeanNaren/warp-ctc.git
     cd warp-ctc;mkdir build; cd build;cmake ..;make
-    cd ./warp-ctc/pytorch_binding;python setup.py install
+    cd ../warp-ctc/pytorch_binding;python setup.py install
     将 pytorch_binding 中生成的warpctc_pytorch文件夹copy到crnn下
     
  ### 制作训练集
